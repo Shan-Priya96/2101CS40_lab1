@@ -173,11 +173,12 @@ void quickSort(int array[], int low, int high) {
 int main() {
   
   int n;
-  printf("choose length of array:\n");
+  printf("Choose length of array:\n");
   scanf("%d", &n);
   int arr[n];
+  printf("Enter the %d elements of arr:\n", n);
   for(int i=0;i<n;i++){
-    printf("enter the %dth element of arr:\n", i);
+    
     scanf("%d", &arr[i]);
   }
   
@@ -218,7 +219,7 @@ int main() {
   else if (choice==4)
   {
     mergeSort(arr, 0, length - 1);
-    printf("Sorted arrayin Ascending order: \n");
+    printf("Sorted array in Ascending order: \n");
     DisplayArray(arr, length);
   }
   //calling quick sort function
