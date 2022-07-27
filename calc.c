@@ -4,22 +4,22 @@ int main() {
 
   char op;
   double first, second;
-  printf("Enter an operator (+, -, *, /): ");
+  printf("Enter an operator (+, -, *, /): "); //operation menu
   scanf("%c", &op);
-  printf("Enter two operands: ");
+  printf("Enter two operands: "); // taking input
   scanf("%lf %lf", &first, &second);
 
   switch (op) {
-    case '+':
+    case '+': //addition case
       printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
       break;
-    case '-':
+    case '-'://subtraction case
       printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
       break;
-       case '*':
+       case '*'://multiplication case
       printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
       break;
-      case '/':
+      case '/': //division case
       printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
       break;
     // operator doesn't match any case constant
