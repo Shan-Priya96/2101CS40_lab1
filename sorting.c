@@ -1,4 +1,18 @@
 #include<stdio.h>
+// Function to print an array
+void DisplayArray(int array[], int length) {
+  for (int i = 0; i < length; i++) {
+    printf("%d ", array[i]);
+  }
+  printf("\n");
+}
+//function to swap
+void swap(int *a, int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
+}
+
 int main() {
   
   int n;
